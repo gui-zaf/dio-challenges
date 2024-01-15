@@ -1,5 +1,5 @@
 const winrate = getWinrate(90, 20);
-const tier = getRank(winrate);
+const rank = getRank(winrate);
 
 function getWinrate(wins, losses) {
   const winrate = wins - losses;
@@ -7,15 +7,15 @@ function getWinrate(wins, losses) {
 }
 
 function getRank(winrate) {
-  let tier = "";
-  if (winrate < 10) tier = "Iron";
-  else if (winrate <= 20) tier = "Bronze";
-  else if (winrate <= 50) tier = "Silver";
-  else if (winrate <= 80) tier = "Gold";
-  else if (winrate <= 90) tier = "Diamond";
-  else if (winrate <= 100) tier = "Legendary";
-  else tier = "Imortal";
-  return tier;
+  let rank = "";
+  if (winrate < 10) rank = "Iron";
+  else if (winrate <= 20) rank = "Bronze";
+  else if (winrate <= 50) rank = "Silver";
+  else if (winrate <= 80) rank = "Gold";
+  else if (winrate <= 90) rank = "Diamond";
+  else if (winrate <= 100) rank = "Legendary";
+  else rank = "Imortal";
+  return rank;
 }
 
-console.log(`The hero has a winrate of ${winrate} and the tier is ${tier}.`);
+console.log(`The hero has a winrate of ${winrate} and the ranking is ${rank}.`);
