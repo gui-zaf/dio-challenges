@@ -1,3 +1,7 @@
 const { gets, print } = require('./average-export.js');
 
-print(gets());
+const grades = [8, 7, 6, 9];
+
+const result = gets(grades);
+
+print(result);

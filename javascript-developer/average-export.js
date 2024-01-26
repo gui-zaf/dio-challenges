@@ -1,8 +1,7 @@
-const average = [2, 2];
-
-function gets() {
-  const total = average.reduce((acc, cur) => acc + cur, 0);
-  const finalAverage = total / average.length;
+function gets(grades) {
+  
+  const total = grades.reduce((acc, cur) => acc + cur, 0);
+  const finalAverage = total / grades.length;
 
   if (finalAverage >= 7) return `${finalAverage.toFixed(2)} - Pass`;
   else if (finalAverage >= 5) return `${finalAverage.toFixed(2)} - Exam`;
