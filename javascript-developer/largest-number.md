@@ -1,0 +1,1 @@
+# Write a program that receives N numbers and finds the highest odd and the lowest even values.
